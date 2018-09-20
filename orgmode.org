@@ -1,0 +1,62 @@
+#+TITLE: Org-mode cheat sheet
+#+AUTHOR: René Steetskamp
+#+EMAIL: steets@otech.nl
+#+TODO: TODO IN-PROGRESS WAITING DONE
+#+STARTUP: showall inlineimages
+
+[[https://orgmode.org/manual/][Manual]] | [[https://orgmode.org/orgcard.pdf][RefCard]] | [[https://orgmode.org/worg/org-tutorials/org4beginners.html][Org4Beginners]] | [[https://orgmode.org/worg/org-glossary.html][Glossary]] | [[http://ehneilsen.net/notebook/orgExamples/org-examples.html][Cookbook]] | [[http://thagomizer.com/blog/2017/03/16/five-useful-org-mode-features.html][5 useful features]]
+
+* Markup: *bold*, /italic/, _underlined_, +strikethrough+, , =verbatim=, ~code~
+
+  - list
+    + other list
+      - Numbered list
+
+* Links[fn:1]: [[http://otech.nl]], [[http://otech.nl][OTech]], [[http://otech.nl/img/otech.jpg]]
+
+
+* Explain todo
+
+** TODO Cycle with S-LEFT and S-RIGHT
+
+* Table and keys
+
+  | key              | effect                               |
+  |------------------+--------------------------------------|
+  | A-RET            | New headline                         |
+  | TAB / S-TAB      | Fold / Unfold                        |
+  | A-RIGHT / A-LEFT | Promote / Demote                     |
+  | S-RIGHT / A-LEFT | Cycle workflow                       |
+  | S-UP / S-DOWN    | Cycle priority                       |
+  | C-c C-e          | Export menu                          |
+  | C-c a            | Agenda                               |
+  | C-c C-c          | (when on heading): edit tags         |
+  |                  | (when on top): refresh local setup   |
+  | C-c '            | (in code block): edit in native mode |
+  | C-c ;            | Toggle COMMENT of subtree            |
+
+* Literal examples
+
+#+BEGIN_EXAMPLE
+Some example from a text file.
+#+END_EXAMPLE
+
+Also available: ~VERSE~, ~QUOTE~ and ~CENTER~
+
+* Source code blocks
+#+BEGIN_SRC emacs-lisp
+  (defun org-xor (a b)
+    "Exclusive or."
+    (if a (not b) b))
+#+END_SRC
+
+Use [[https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-ditaa.html][Ditaa]] for figures.
+
+#+BEGIN_COMMENT
+This is a comment block
+And so is any line starting with # and a whitespace
+The word COMMENT at the beginning of a heading comments out an entire subtree
+#+END_COMMENT
+
+# footnotes are below
+[fn:1] Show markup by removing the last (hidden) symbol of the link

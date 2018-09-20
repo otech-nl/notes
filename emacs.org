@@ -1,0 +1,42 @@
+#+TITLE: Emacs
+#+AUTHOR: René Steetskamp
+#+STARTUP: showall
+
+[[https://www.gnu.org/software/emacs/][Home]] | [[http://ergoemacs.org/][ErgoEmacs]]
+
+I use [[https://github.com/bbatsov/prelude][Prelude Emacs]] with minimal [[https://github.com/otech-nl/prelude][customisation]].
+
+* Keymaps
+
+** Emacs standard
+
+  | key     | effect                       |
+  |---------+------------------------------|
+  | C-_     | Undo                         |
+  | C-x C-f | Find file (open into buffer) |
+  | C-x C-s | Save buffer to file          |
+  | C-x C-w | Save buffer to file as ...   |
+  | C-c d   | Duplicate line               |
+  | C-x 2   | Split window horizontally    |
+  | C-x 3   | Split window vertically      |
+  | C-x 1   | Focus window                 |
+  | C-x o   | Go to other window           |
+  | C-x b   | Go to other buffer           |
+  | C-x d   | Edit directory               |
+  | C-g     | Abort operation              |
+
+# ** Prelude
+#
+# | key | effect |
+# |-----+--------|
+# |     |        |
+
+** Custom
+
+  | key   | effect                                      |
+  |-------+---------------------------------------------|
+  | C-c / | Toggle region comment                       |
+  | C-c j | Join lines                                  |
+  | C-x k | Kill buffer /immediately/ (no confirmation) |
+  | C-c l | List packages                               |
+  | C-c \ | Copy file name to clipboard                 |

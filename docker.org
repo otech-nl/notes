@@ -1,0 +1,13 @@
+#+TITLE: Docker
+
+[[https://docs.docker.com/][Docs]] | [[https://github.com/dimonomid/docker-quick-ref/releases/download/latest/docker-quick-ref.pdf][QuickRef]] | [[https://dockerlux.github.io/pdf/cheat-sheet-v2.pdf][Cheatsheet]]
+
+Use ~docker help~, ~man dockerfile~ of ~man docker-<command>~ (e.g. ~man docker-run~).
+
+* Concepts:
+
+- App hierarchy:
+  - *Stack*
+  - *Service*
+  - *Container*: a running image (i.e. image + state)
+  - *Image*: an executable package

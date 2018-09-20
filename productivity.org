@@ -1,0 +1,7 @@
+#+TITLE: Productivity
+#+AUTHOR: René Steetskamp
+#+STARTUP: showall inlineimages
+
+
+  [[./img/GTD-workflow.png]]
+([[file://img/GTD-advanced workflow.png][Advanced]])
