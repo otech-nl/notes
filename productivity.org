@@ -4,4 +4,4 @@
 
 
   [[./img/GTD-workflow.png]]
-([[file://img/GTD-advanced workflow.png][Advanced]])
+([[file:./img/GTD-advanced workflow.png][Advanced]])

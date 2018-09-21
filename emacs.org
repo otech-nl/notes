@@ -28,12 +28,6 @@ I use [[https://github.com/bbatsov/prelude][Prelude Emacs]] with minimal [[https
   | C-x o     | Go to other window           |
   | M-f / M-b | Move word forward / backward |
 
-# ** Prelude
-#
-# | key | effect |
-# |-----+--------|
-# |     |        |
-
 ** Custom
 
   | key   | effect                                      |

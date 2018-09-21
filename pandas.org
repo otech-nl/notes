@@ -4,7 +4,8 @@
 
 [[https://pandas.pydata.org/][Home]] | [[http://ehneilsen.net/notebook/pandasExamples/pandas_examples.html][Cookbook]]
 
-Data science is learning from data in order to gain useful predictions and insights and consists of the steps below [[https://cs109.github.io][[[src]]]]:
+Data science is learning from data in order to gain useful predictions and insights and consists of the steps below[fn::https://cs109.github.io]:
+
 
 1. *Ask* an interesting question:
     1. What is the scientific *goal*?

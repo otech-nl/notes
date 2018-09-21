@@ -5,9 +5,3 @@
 Once upon a time, Javascript was the domain of /script kiddies/. No more.
 
 The last few years have been a roller coaster ride for the language and its thriving community. The result is ECMA Script 6 (ES6, ES2016) with a long list of state of the art [[http://es6-features.org/][features]]
-
-In 1998 the original developer or Tcl/TK, John Ousterhout, [[http://www.tcl.tk/doc/scripting.html][wrote]]:
-
-#+BEGIN_QUOTE
-Scripting languages are designed for "gluing" applications; they use typeless approaches to achieve a higher level of programming and more rapid application development than system programming languages. Increases in computer speed and changes in the application mix are making scripting languages more and more important for applications of the future.
-#+END_QUOTE

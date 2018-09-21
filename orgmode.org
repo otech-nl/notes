@@ -12,12 +12,9 @@
     + other list
       - Numbered list
 
-* Links[fn:1]: [[http://otech.nl]], [[http://otech.nl][OTech]], [[http://otech.nl/img/otech.jpg]]
+* Links[fn:: Show markup by removing the last (hidden) symbol of the link]: [[http://otech.nl]], [[http://otech.nl][OTech]], [[http://otech.nl/img/otech.jpg]]
 
-
-* Explain todo
-
-** TODO Cycle with S-LEFT and S-RIGHT
+* TODO Cycle to do items with S-LEFT and S-RIGHT
 
 * Table and keys
 
@@ -57,6 +54,3 @@ This is a comment block
 And so is any line starting with # and a whitespace
 The word COMMENT at the beginning of a heading comments out an entire subtree
 #+END_COMMENT
-
-# footnotes are below
-[fn:1] Show markup by removing the last (hidden) symbol of the link

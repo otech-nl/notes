@@ -1,5 +1,0 @@
-#+TITLE: Version management with Git and Github
-#+AUTHOR: René Steetskamp
-#+EMAIL: steets@otech.nl
-
-I use [[https://git-scm.com/][Git]] for version control and [[https://github.com/otech-nl][Github]] for cloud storage of my code, for issue management, and for project boards.

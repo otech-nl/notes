@@ -2,7 +2,7 @@
 #+AUTHOR: René Steetskamp
 #+EMAIL: steets@otech.nl
 
-Python's [[/posts/pipenv][virtual environments]] are a blessing, but as they manage Python dependencies only, they are also limited.
+Python's [[file:python.org][virtual environments]] are a blessing, but as they manage Python dependencies only, they are also limited.
 
 For example, I use [[https://www.sqlite.org/][sqlite]] for most of my projects, but in some cases, I need something else, like a more sophisticated SQL database (e.g. [[https://mariadb.org/][MariaDB]]) or a no-SQL database (e.g. [[https://www.mongodb.com/][MongoDB]]). In situations like that, I use [[https://www.vagrantup.com/][Vagrant]]:
 

@@ -9,29 +9,31 @@ A collection of notes on several subjects.
 
   When developing I try to apply the following principles:
 
-** Open
-   I prefer open technologies. This means I use open source software (OSS) whenever I can. And practically the only times that I can't involve working together on Microsoft Office documents.
-
-** Don't repeat yourself
-   I try to solve everything only once.
-
-** Don't re-invent the wheel
-
-** Use as-is
-
-** Fast-follower
-
-** Design patterns
+- Open
+  I prefer open technologies. This means I use open source software (OSS) whenever I can. And practically the only times that I can't involve working together on Microsoft Office documents.
+- Don't repeat yourself
+  I try to solve everything only once.
+- Don't re-invent the wheel
+- Use as-is
+- Fast-follower
+- Design patterns
 
 * My preferred tools:
 
-* [[/posts/emacs][Emacs]] (or sometimes [[https://code.visualstudio.com/][Code]]) for code editing.
-* [[/posts/git][Git]] for version management and [[https://github.com/otech-nl][Github]] for sharing my code, issue management, and (Kanban) boards.
-* [[/posts/vagrant][Vagrant]] for managing development environments where [[/posts/pipenv][Python's virtual environments]] are not enough.
-* [[/posts/org-mode][org-mode]] (and sometimes [[https://daringfireball.net/projects/markdown/syntax][Markdown]]) for plain text editing.
+In 1998 the original developer or Tcl/TK, John Ousterhout, [[http://www.tcl.tk/doc/scripting.html][wrote]]:
+
+#+BEGIN_QUOTE
+Scripting languages are designed for "gluing" applications; they use typeless approaches to achieve a higher level of programming and more rapid application development than system programming languages. Increases in computer speed and changes in the application mix are making scripting languages more and more important for applications of the future.
+#+END_QUOTE
+
+- [[/posts/emacs][Emacs]] (or sometimes [[https://code.visualstudio.com/][Code]]) for code editing.
+- [[file:python.org][Python]] and [[file:javascript.org][Javascript]] for programming.
+- [[/posts/git][Git]] for version management and [[https://github.com/otech-nl][Github]] for sharing my code, issue management, and (Kanban) boards.
+- [[/posts/vagrant][Vagrant]] for managing development environments where [[/posts/pipenv][Python's virtual environments]] are not enough.
+- [[/posts/org-mode][org-mode]] (and sometimes [[https://daringfireball.net/projects/markdown/syntax][Markdown]]) for plain text editing.
 
   Finally, some of my favorite web-sites for tech information:
 
-* [[https://scotch.io/][Scotch.io]] provides some really nice tutorials.
+- [[https://scotch.io/][Scotch.io]] provides some really nice tutorials.
 
-  I prefer to work on Ubuntu, but are sometimes forced to work on Windows. Therefore all my tools must work on both.
+  I prefer to work on [[https://www.ubuntu.com/][Ubuntu]], but are sometimes forced to work on Windows. Therefore all my tools preferably work on both.
