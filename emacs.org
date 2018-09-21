@@ -1,5 +1,6 @@
 #+TITLE: Emacs
 #+AUTHOR: René Steetskamp
+#+EMAIL: steets@otech.nl
 #+STARTUP: showall
 
 [[https://www.gnu.org/software/emacs/][Home]] | [[http://ergoemacs.org/][ErgoEmacs]]
@@ -10,20 +11,22 @@ I use [[https://github.com/bbatsov/prelude][Prelude Emacs]] with minimal [[https
 
 ** Emacs standard
 
-  | key     | effect                       |
-  |---------+------------------------------|
-  | C-_     | Undo                         |
-  | C-x C-f | Find file (open into buffer) |
-  | C-x C-s | Save buffer to file          |
-  | C-x C-w | Save buffer to file as ...   |
-  | C-c d   | Duplicate line               |
-  | C-x 2   | Split window horizontally    |
-  | C-x 3   | Split window vertically      |
-  | C-x 1   | Focus window                 |
-  | C-x o   | Go to other window           |
-  | C-x b   | Go to other buffer           |
-  | C-x d   | Edit directory               |
-  | C-g     | Abort operation              |
+  | key       | effect                       |
+  |-----------+------------------------------|
+  | C-_       | Undo                         |
+  | C-c d     | Duplicate line               |
+  | C-g       | Abort operation              |
+  | C-x 1     | Focus window                 |
+  | C-x 2     | Split window horizontally    |
+  | C-x 3     | Split window vertically      |
+  | C-x C-f   | Find file (open into buffer) |
+  | C-x C-s   | Save buffer to file          |
+  | C-x C-w   | Save buffer to file as ...   |
+  | C-x b     | Go to other buffer           |
+  | C-x d     | Edit directory               |
+  | C-x e     | Execute elisp under cursor   |
+  | C-x o     | Go to other window           |
+  | M-f / M-b | Move word forward / backward |
 
 # ** Prelude
 #
@@ -37,6 +40,5 @@ I use [[https://github.com/bbatsov/prelude][Prelude Emacs]] with minimal [[https
   |-------+---------------------------------------------|
   | C-c / | Toggle region comment                       |
   | C-c j | Join lines                                  |
-  | C-x k | Kill buffer /immediately/ (no confirmation) |
   | C-c l | List packages                               |
-  | C-c \ | Copy file name to clipboard                 |
+  | C-x k | Kill buffer /immediately/ (no confirmation) |

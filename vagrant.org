@@ -1,0 +1,19 @@
+#+TITLE: Virtual development environments with Vagrant
+#+AUTHOR: René Steetskamp
+#+EMAIL: steets@otech.nl
+
+Python's [[/posts/pipenv][virtual environments]] are a blessing, but as they manage Python dependencies only, they are also limited.
+
+For example, I use [[https://www.sqlite.org/][sqlite]] for most of my projects, but in some cases, I need something else, like a more sophisticated SQL database (e.g. [[https://mariadb.org/][MariaDB]]) or a no-SQL database (e.g. [[https://www.mongodb.com/][MongoDB]]). In situations like that, I use [[https://www.vagrantup.com/][Vagrant]]:
+
+#+BEGIN_QUOTE
+Vagrant provides easy to configure, reproducible, and portable work environments built on top of industry-standard technology and controlled by a single consistent workflow to help maximize the productivity and flexibility of you and your team.
+#+END_QUOTE
+
+What this means is that with Vagrant I can specify all my project's dependencies in configuration files and scripts. This keeps my projects nicely separated and allows me to reproduce my project's environment at will (this process is called /provisioning/). I can even use this provisioning to transfer the project to a different environment (e.g. from development to test) and to other developers.
+
+If you want to get Vagrant up and running, the [[https://www.vagrantup.com/intro/getting-started/index.html][Getting Started]] section provides a good introduction. For a more beginner-friendly tutorial, head to [[https://scotch.io/tutorials/get-vagrant-up-and-running-in-no-time][Scotch.io]] instead. If you want to skip all that, just go to the [[https://www.vagrantup.com/docs/][official documentation]] or to the [[https://www.jetbrains.com/help/pycharm/using-the-advanced-vagrant-features-in-product.html][PyCharm Vagrant page]] if that's your IDE of choice.
+
+In short, Vagrant is about provisioning a virtual machine with all the assets you need for your project. There are many provisioners to choose from to help you with that, like [[https://www.ansible.com/][Ansible]], [[https://puppet.com/][Puppet]] and [[https://www.chef.io/][Chef]]. But I prefer vanilla bash provisioning, because I am already familiar with bash and would have to learn any of the other provisioners. In other words, my needs are not complex enough to warrant the time needed to learn a more advanced provisioner. And, to be honest, I found their learning curve rather steep.
+
+To make my life (and maybe yours) a little easier, I wrote some basic scaffolding which is available [[https://github.com/otech-nl/vagrant-lemp][here]].

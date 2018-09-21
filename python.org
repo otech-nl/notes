@@ -1,0 +1,109 @@
+#+TITLE: Python
+#+AUTHOR: René Steetskamp
+#+EMAIL: steets@otech.nl
+
+I use Python for work and play. I make money with Python, and I have fun with it.
+
+There's excellent documentation for [[https://docs.python.org/3/][Python itself]] and for many of the Python packages. But how do you use Python in practical, day-to-day use? [[https://automatetheboringstuff.com/][Automate the boring stuff]] provides a thorough overview of the basics for beginners. This site takes this a step further by showing how I use Python. There are many other possibilities, but this one works for me.
+
+* Second best?
+
+  Many consider Python 'the second best language for anything'. PHP may be the leading open source language for the web, Java may dominate the enterprise, R may be the dedicated language for data science, and bash may be the go to language for shell scripting, but in all these cases Python is at least a viable alternative.
+
+  What this means is that by learning Python you can be competitive in all these areas. And learning Python is relatively easy, because it is considered to be very beginner-friendly (while at the same time being powerful enough to intrigue the most advanced hackers).
+
+  But don't get carried away, because just learning Python (the programming _language_) is not enough. To be productive in any area, you will have to learn the [[/pages/about#packages][appropriate package(s)]] as well.
+
+  The only area I can think of where Python is not at home, is the web client. There are client-side implementations like [[http://www.skulpt.org/][Skulpt]], but these are still rather obscure. Javascript rulez (_sic_) in the browser. And with it, its elegant asynchronicity and use of callbacks. Both work in Python (the former since v3.4 through [[https://docs.python.org/3/library/asyncio.html][asyncio]]), but they are not as common.
+
+* History
+
+  Python was originally developed by [[https://www.python.org/~guido/][Guide van Rossum]] who also was its [[https://wiki.python.org/moin/BDFL][BDFL]] for decades. But on July 12, 2018 he indicated he is going to [[https://mail.python.org/pipermail/python-committers/2018-July/005664.html][step down]].
+
+  Version 2.7 of Python has long been my default, but a couple of years ago I switched to version 3, which rectified some of the [[https://www.scrum.org/resources/blog/product-backlog-and-technical-debt][technical debt]] that had built up in version 2, at the cost of loosing backwards compatibility.
+
+* Pythonic
+
+  When working with Python, you will often encounter the phrase /pythonic/, indicating if something is 'proper python' or not. But what does this mean?
+
+  [[https://www.python.org/dev/peps/pep-0020/][PEP20]], or the /Zen of Python/, describes guiding principles for Python's design:
+
+  - Beautiful is better than ugly.
+  - Explicit is better than implicit.
+  - Simple is better than complex.
+  - Complex is better than complicated.
+  - Flat is better than nested.
+  - Sparse is better than dense.
+  - Readability counts.
+  - Special cases aren't special enough to break the rules.
+  - Although practicality beats purity.
+  - Errors should never pass silently.
+  - Unless explicitly silenced.
+  - In the face of ambiguity, refuse the temptation to guess.
+  - There should be one --and preferably only one-- obvious way to do it.
+  - Although that way may not be obvious at first unless you're Dutch.
+  - Now is better than never.
+  - Although never is often better than /right/ now.
+  - If the implementation is hard to explain, it's a bad idea.
+  - If the implementation is easy to explain, it may be a good idea.
+  - Namespaces are one honking great idea -- let's do more of those!
+
+  Note that the Zen of Python uses terms like "is better than" and "beats", indicating that these are relative, rather than absolute, values. So, flat may be better than nested, but in specific conditions you may still use nesting.
+
+  [[http://pep8.org/][PEP8]] contains the Python style guide. Here you will find conventions about layout, whitespace, etc.
+
+  The Hitchhiker’s Guide to Python contains an extensive section on [[https://docs.python-guide.org/#writing-great-python-code][writing great code]].
+
+  To me, constructs like [[https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions][list comprehension]] and [[https://wiki.python.org/moin/Generators][generators]] feel very Python-specific, although they also occur in other languages.
+
+* Packages
+   Here's a list of the packages I use most:
+
+
+[[https://docs.pipenv.org/][Pipenv]], as its name suggest, combines pip and virtualenv:
+
+#+BEGIN_QUOTE
+Pipenv is primarily meant to provide users and developers of applications with an easy method to setup a working environment. It harnesses Pipfile, pip, and virtualenv into one single command. It features very pretty terminal colors.
+#+END_QUOTE
+
+Pipenv simplified my Python workflow significantly. Instead of creating a virtual environment, activating it, running ~pip install~, etc., I just do ~pipenv shell~ and I'm  in business.
+
+   - Both [[With flask][flask]] and [[With Django][Django]] for web development, on the client combined with [[https://getbootstrap.com/][Bootstrap]], [[https://datatables.net/][Datatables]] and [[https://www.chartjs.org/][Chart.js]].
+   - [[file:pandas.org][Pandas]] for data analysis.
+   - [[file:scrapy.org][Scrapy]] for web scraping.
+   - [[file:documentation][Nikola]] for blogging on [[https://pages.github.com/][Github pages]].
+
+     But remember, this are just _my_ preferences, [[https://www.intuh.net/woordenlijst/#ymmv][YMMV]]. If you want to dig up your own favorites, head over to the curated list of Python packages at [[https://python.libhunt.com/categories][Awesome Python]].
+
+
+* Web development
+
+** With Flask
+
+   Web projects differ widely, so there's not /one size fits all/ web framework for me. What I need is just the basics that can be extended with anything the project at hand asks for. [[http://flask.pocoo.org/][Flask]] is my go to package for web development.
+
+   #+BEGIN_QUOTE
+   Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions. Flask is fun and easy to set up.
+   #+ENDQUOTE
+
+   Out of the box, Flask just provides minimal http request/response, routing and template support. This means that Flask is unopinionated, but also that, for anything that's not completely trivial, you need to add extensions. Most of my projects need at least [[http://flask-sqlalchemy.pocoo.org/][SQL Alchemy]], [[https://flask-wtf.readthedocs.io/][WTForms]] and [[https://pythonhosted.org/Flask-Security/][security]]. For convenience, I have bundled these in {{% attention %}} [[https://github.com/otech-nl/barrel][Barrel]], which optionally also includes [[https://flask-admin.readthedocs.io][admin]], [[https://flask-restful.readthedocs.io/][REST]] and [[https://github.com/tahoe/flask-datatables][datatables]] modules.
+
+   The most advanced part of Barrel is the db module, which provided CRUD-operations and relation decorators. I am working on making that a separate package as /SQLAngelo/. More on that later.
+
+** With Django
+
+   [[https://www.djangoproject.com/][Django]]
+
+* Testing
+
+** Unit testing
+
+Python has many unit testing frameworks, like [[http://doc.pytest.org/][PyTest]] and [[https://nose2.readthedocs.io/][Nose2]]. But I prefer the default [[https://docs.python.org/3/library/unittest.html][unit testing]], because Python provides it out of the box, and it satisfies all of my requirements.
+
+** Functional testing
+
+For functional (or behaviorial) testing I prefer [[https://behave.readthedocs.io/][Behave]] that uses [[https://docs.cucumber.io/gherkin/][Gherkin]] to describe behavior in (near) natural language.
+
+** Faking data
+
+[[https://faker.readthedocs.io/][Faker]]

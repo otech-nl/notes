@@ -1,0 +1,15 @@
+#+TITLE: Documentation
+#+AUTHOR: René Steetskamp
+#+EMAIL: steets@otech.nl
+
+Clearly, [[http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html][reStructured Text]] (reST) is the most Pythonic documentation format. And [[http://www.sphinx-doc.org/][Sphinx]] is the generator to go with it.
+
+However, for most use cases, I find reST far too complicated and I prefer [[https://orgmode.org][Orgmode]] (and sometimes [[https://daringfireball.net/projects/markdown/syntax][Markdown]]) for documentation.
+
+On occasion I use an [[http://markup.su/highlighter][Online Syntax Highlighter]] to format source code.
+
+* Nikola
+
+I sometimes blog with Markdown-files and publish it with static site generator [[http://getnikola.com][Nikola]]. While writing I can check the live result with the ~nikola auto~ command.
+
+One of the lesser known features of Nikola are [[https://getnikola.com/handbook.html][shortcodes]]: simple snippets that you can use throughout your blog. They come in the varieties built-in, community-provided, and home-made. The simplest way to roll your own is by using templates in the ~shortcodes~ directory. For example, I have defined a ~shortcodes/attention.tmpl~ that gives me ~{{% attention %}}~ whenever I want it.
