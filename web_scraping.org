@@ -20,9 +20,9 @@ You can use [[https://www.crummy.com/software/BeautifulSoup/bs4/doc/][Beautiful 
 
 There are two ways to use Scrapy, the hard way and the /quick-'n-dirty/ way:
 
-- For the _hard way_ you let Scrapy generate a project for you with the [[https://doc.scrapy.org/en/latest/topics/commands.html#creating-projects][~scrapy startproject~]] command. This will give you all the bells and whistles you need for extensive web-scraping, including items, middleware and pipelines. This will allow you to write a whole nest of related (or unrelated) spiders and deploy them to the cloud. But for most use cases this is far more than is needed, and the easy way is sufficient.
+- For the _hard way_ you let Scrapy generate a project for you with the ~[[https://doc.scrapy.org/en/latest/topics/commands.html#creating-projects][startproject]]~ command. This will give you all the bells and whistles you need for extensive web-scraping, including items, middleware and pipelines. This will allow you to write a whole nest of related (or unrelated) spiders and deploy them to the cloud. But for most use cases this is far more than is needed, and the easy way is sufficient.
 
-- The _easy way_ is to simply write a spider and run it with the [[https://doc.scrapy.org/en/latest/topics/commands.html#runspider][~scrapy runspider~]] command. This will give you just one, simple spider, but I find that in most cases this is sufficient.
+- The _easy way_ is to simply write a spider and run it with the ~[[https://doc.scrapy.org/en/latest/topics/commands.html#runspider][runspider]]~ command. This will give you just one, simple spider, but I find that in most cases this is sufficient.
 
 The ~scrapy shell~ command allows you the research the page and experiment with selectors.
 

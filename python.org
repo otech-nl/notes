@@ -72,7 +72,7 @@ There's excellent documentation for [[https://docs.python.org/3/][Python itself]
    - Both [[With flask][flask]] and [[With Django][Django]] for web development, on the client combined with [[https://getbootstrap.com/][Bootstrap]], [[https://datatables.net/][Datatables]] and [[https://www.chartjs.org/][Chart.js]].
    - [[file:pandas.org][Pandas]] for data analysis.
    - [[file:web_scraping.org][Scrapy]] for web scraping.
-   - [[file:documentation][Nikola]] for blogging on [[https://pages.github.com/][Github pages]].
+   - [[file:documentation.org][Nikola]] for blogging on [[https://pages.github.com/][Github pages]].
 
      But remember, this are just /my/ preferences, [[https://www.intuh.net/woordenlijst/#ymmv][YMMV]]. If you want to dig up your own favorites, head over to the curated list of Python packages at [[https://python.libhunt.com/categories][Awesome Python]].
 

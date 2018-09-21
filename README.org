@@ -9,14 +9,12 @@ A collection of notes on several subjects.
 
   When developing I try to apply the following principles:
 
-- Open
-  I prefer open technologies. This means I use open source software (OSS) whenever I can. And practically the only times that I can't involve working together on Microsoft Office documents.
-- Don't repeat yourself
-  I try to solve everything only once.
-- Don't re-invent the wheel
-- Use as-is
-- Fast-follower
-- Design patterns
+- I prefer _open technologies_: I use open source software (OSS) whenever I can. And practically the only times that I can't involve working together on Microsoft Office documents.
+- _DRY_ (Don't repeat yourself): I try to solve everything only once.
+- I don't want to _re-invent the wheel_. That is: if a tool is available, I try to use it. even if it doesn't fit 100%.
+- I try to use tools _as-is_ as much as possible. Also, I try to use standard tools, rather than their more sophisticated alternatives.
+- I try to be a _fast-follower_, instead of jumping on every new hype.
+- _Design patterns_ are an powerful way to exchange knowledge.
 
 * My preferred tools:
 
@@ -26,11 +24,11 @@ In 1998 the original developer or Tcl/TK, John Ousterhout, [[http://www.tcl.tk/d
 Scripting languages are designed for "gluing" applications; they use typeless approaches to achieve a higher level of programming and more rapid application development than system programming languages. Increases in computer speed and changes in the application mix are making scripting languages more and more important for applications of the future.
 #+END_QUOTE
 
-- [[/posts/emacs][Emacs]] (or sometimes [[https://code.visualstudio.com/][Code]]) for code editing.
+- [[file:emacs.org][Emacs]] (or sometimes [[https://code.visualstudio.com/][Code]]) for code editing.
 - [[file:python.org][Python]] and [[file:javascript.org][Javascript]] for programming.
-- [[/posts/git][Git]] for version management and [[https://github.com/otech-nl][Github]] for sharing my code, issue management, and (Kanban) boards.
-- [[/posts/vagrant][Vagrant]] for managing development environments where [[/posts/pipenv][Python's virtual environments]] are not enough.
-- [[/posts/org-mode][org-mode]] (and sometimes [[https://daringfireball.net/projects/markdown/syntax][Markdown]]) for plain text editing.
+- [[https://git-scm.com/doc][Git]] for version management and [[https://github.com/otech-nl][Github]] for sharing my code, issue management, and (Kanban) boards.
+- [[file:vagrant.org][Vagrant]] for managing development environments where [[file:python.org][Python's virtual environments]] are not enough.
+- [[file:orgmode.org][org-mode]] (and sometimes [[https://daringfireball.net/projects/markdown/syntax][Markdown]]) for plain text editing.
 
   Finally, some of my favorite web-sites for tech information:
 

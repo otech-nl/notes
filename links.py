@@ -1,4 +1,10 @@
 # -*- coding: utf-8 -*-
+''' Script to convert markdown links to orgmode links
+Usage: links.py [md-files]
+When no Markdown files are given all *.md files in the current folder are converted.
+Results are written (appended) to ten corresponding .org files.
+'''
+
 from glob import glob
 import re
 import sys
