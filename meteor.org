@@ -1,0 +1,110 @@
+#+TITLE: Meteor overview and major packages (deprecated)
+#+AUTHOR: René Steetskamp
+#+EMAIL: steets@otech.nl
+#+STARTUP: showall indent hidestars inlineimages
+
+This repository contains a brief overview of [[http://meteor.com][Meteor]] and an list of its major packages. Meteor is an innovative platform for developing web-apps. The following features distinguish Meteor from other web-platforms:
+
+- data over the wire: In Meteor client and server exchange data, not HTML.
+  - single page app (SPA): This means that the client is loaded as a whole at start-up and then manages the user interaction without unnecessary calls to the server. This makes for a smooth user-experience.
+  - no REST: As you can access data from the client just as you would from the server, data over the wire also means that there is not need for REST interfaces.
+- full-stack: In Meteor the functionality on both the server (through node.js) and the client (through the browser) is implemented in Javascript (ES2015+ to be exact). This saves the developer from continuously having to switch between languages.
+- multi-platform: With Meteor you can build apps for web, iOS, and Android from the samen code base. Nou mar nerd Cordova for platform-specific features.
+- no SQL: Meteor uses Mongodb as its data backend. Mongodb is document-based and does not use SQL.
+- reactivity: Data in Meteor is updated everywhere once it changes. This includes all active clients, which adds to the smooth user-experience.
+
+#+BEGIN_QUOTE
+These are impressive Unique Selling Points, but in the end it turned out to be too much (at least it was to me). There are just too many moving parts. So, since 2017Q4 I haven't worked with Meteor. It's premises are a developer's dream, but I always struggled to get a stable app.
+#+END_QUOTE
+
+* Overview
+
+The mindmap below shows how I understand Meteor:
+
+[[./img/Meteor.png][Meteor mindmap]]
+
+The client handles routing and rendering. Routing is taken care of by Flow router, which uses Blaze as template engine (Angular and React are also supported). Templates are divided in three layers:
+
+- layouts define the general structure of your site, using pages
+- pages are smart, which means they collect data and feed them to components
+- components do not interact with anything except though parameters, which makes them highly reusable
+
+Templates can be controlled through helpers and event handlers (including onCreated).
+
+The server uses Mongodb as a datastore. Data is stored in collections, which are basically persistent JSON documents. A schema language is used to define the datastructures, so data can be validated. Schema also drive the autoform package. Collections can be controlled through helpers and hooks.
+
+The client and server communicate through a publish/subscribe mechanism and through methods. The server controls data access by selectively publishing data to the client. The client (pages) collect data through subscriptions. Methods are Meteor's remote procedure calls (RPCs) and can use schema for data validation.
+
+Some final tips & tricks:
+
+- ~waitOn~ (package Iron Router) lets you defer execution untill a subscription has finished
+- Meteor methods <i>can</i> be called synchronously on the server, but <i>must</i> be called asynchronously  on the client
+- Global variables aren't available from templates. Access them with template helper.
+- add ~c:\Windows\System32~ to path on tasklist.exe error
+- The autorun function lets you define a function that is run automatically when a reactive data source changes.
+
+* Packages
+
+Just like all other modern frameworks, Meteor relies heavily on third party packages from its thriving eco-system. The Meteor [[http://guide.meteor.com][Guide]] gives an opinionated overview of which packages to use. The table below shows these packages in the middle column, along with some additional packages I prefer in the final column. For more packages visit [[https://atmospherejs.com/packages/most-used][Atmosphere.js]]. You can import all these package definitions by importing the file ~packages~ from this repository into the file ~packages~ of your project and the remove any package you don't need.
+
+<tr><th>subject</th><th>guide</th><th>extra</th></tr>
+
+|----------------+---------------------------------------+------------------------------|
+| Out of the box | [[https://docs.meteor.com/api/http.html][http]]                                  |                              |
+|                | [[https://docs.meteor.com/packages/jquery.html][jQuery]]                                |                              |
+|                | [[https://docs.meteor.com/packages/markdown.html][markdown]]                              |                              |
+|                | [[http://atmospherejs.com/meteor/ecmascript][meteor:ecmascript]]                     |                              |
+|                | [[https://docs.meteor.com/packages/underscore.html][underscore]]                            |                              |
+|----------------+---------------------------------------+------------------------------|
+| Collections    | [[http://atmospherejs.com/aldeed/collection2][aldeed:collection2]]                    |                              |
+|                | [[http://atmospherejs.com/aldeed/simple-schema][aldeed:simple-schema]] ([[http://atmospherejs.com/jagi/astronomy][jagi:astronomy]]) |                              |
+|                | [[http://atmospherejs.com/dburles/collection-helpers][dburles:collection-helpers]]            |                              |
+|                | [[http://atmospherejs.com/percolate/migrations][percolate:migrations]]                  |                              |
+|----------------+---------------------------------------+------------------------------|
+| Data-loading   | [[http://atmospherejs.com/percolate/find-from-publication)][percolate:find-from-publication]]       |                              |
+|                | [[http://atmospherejs.com/reywood/publish-composite][reywood:publish-composite]]             |                              |
+|                | [[http://atmospherejs.com/simple/rest][simple:rest]]                           |                              |
+|                | [[http://atmospherejs.com/tmeasday/publish-counts][tmeasday:publish-counts]]               |                              |
+|----------------+---------------------------------------+------------------------------|
+| Methods        | [[https://atmospherejs.com/mdg/validated-method][mdg:validated-method]]                  |                              |
+|----------------+---------------------------------------+------------------------------|
+| User accounts  | [[http://atmospherejs.com/alanning/roles][alanning:roles]]                        | [[http://atmospherejs.com/didericis/permissions-mixin][didericis:permissions-mixin]]  |
+|                | [[http://atmospherejs.com/arillo/flow-router-helpers][arillo:flow-router-helpers]]            | [[http://atmospherejs.com/matb33/collection-hooks][matb33:collection-hooks]]      |
+|                | [[http://atmospherejs.com/useraccounts/flow-routing][useraccounts:flow-routing]]             | [[http://atmospherejs.com/ongoworks/security][ongoworks:security]]           |
+|                | [[http://atmospherejs.com/useraccounts/core][useraccounts:core]]                     | [[http://atmospherejs.com/ostrio/user-status][ostrio:user-status]]           |
+|                | [[http://atmospherejs.com/useraccounts/unstyled][useraccounts:unstyled]]                 | (or [[http://atmospherejs.com/tmeasday/presence][tmeasday:presence]])       |
+|----------------+---------------------------------------+------------------------------|
+| Routing        | [[http://atmospherejs.com/arillo/flow-router-helpers][arillo:flow-router-helpers]]            | [[http://atmospherejs.com/ostrio/flow-router-extra][ostrio:flow-router-extra]]     |
+|                | [[http://atmospherejs.com/kadira/flow-router][kadira:flow-router]]                    |                              |
+|                | [[http://atmospherejs.com/kadira/blaze-layout][kadira:blaze-layout]]                   |                              |
+|                | [[http://atmospherejs.com/nimble/restivus][nimble:restivus]]                       |                              |
+|                | [[http://atmospherejs.com/zimme/active-route][zimme:active-route]]                    |                              |
+|----------------+---------------------------------------+------------------------------|
+| UI-UX          | [[http://atmospherejs.com/aldeed/autoform][aldeed:autoform]]                       | [[http://atmospherejs.com/aldeed/tabular][aldeed:tabular]]               |
+|                | [[http://atmospherejs.com/percolate/momentum][percolate:momentum]]                    | [[http://atmospherejs.com/aldeed/template-extension][aldeed:template-extension]]    |
+|                | [[http://atmospherejs.com/tap/i18n][tap:i18n]] (or [[http://atmospherejs.com/universe/18n][universe:18n]])            | [[http://atmospherejs.com/aslagle/reactive-table][aslagle:reactive-table]]       |
+|                |                                       | [[http://atmospherejs.com/chrismbeckett/toastr][chrismbeckett:toastr]]         |
+|                |                                       | [[http://atmospherejs.com/fortawesome/fontawesome][fortawesome:fontawesome]]      |
+|                |                                       | [[http://atmospherejs.com/matb33:bootstrap-glyphicons][matb33:bootstrap-glyphicons]]  |
+|                |                                       | [[http://atmospherejs.com/raix/push][raix:push]]                    |
+|                |                                       | [[http://atmospherejs.com/semantic/ui][semantic:ui]]                  |
+|                |                                       | [[http://atmospherejs.com/twbs/bootstrap][twbs:bootstrap]]               |
+|----------------+---------------------------------------+------------------------------|
+| Other          | [[http://atmospherejs.com/dburles/google-maps][dburles:google-maps]]                   |                              |
+|                | [[http://atmospherejs.com/easy/search][easy:search]]                           |                              |
+|                | [[http://atmospherejs.com/momentjs/moment][momentjs:moment]]                       |                              |
+|                | [[http://atmospherejs.com/sach/flow-db-admin][sach:flow-db-admin]]                    |                              |
+|----------------+---------------------------------------+------------------------------|
+| Testing        | [[http://atmospherejs.com/dburles/factory][dburles:factory]]                       | [[https://chimp.readme.io/][Chimp]] (not really a package) |
+|                | [[http://atmospherejs.com/hwillson/stub-collections][hwillson:stub-collections]]             |                              |
+|                | [[http://atmospherejs.com/johanbrook/publication-collector][johanbrook:publication-collector]]      |                              |
+|                | [[http://atmospherejs.com/meteortesting/mocha][meteortesting:mocha]]                   |                              |
+|                | [[http://atmospherejs.com/practicalmeteor/mocha][practicalmeteor:mocha]]                 |                              |
+|                | [[http://atmospherejs.com/velocity/meteor-stubs][velocity:meteor-stubs]]                 |                              |
+|                | [[http://atmospherejs.com/xolvio/cleaner][xolvio:cleaner]]                        |                              |
+|----------------+---------------------------------------+------------------------------|
+| Deployment     | [[http://atmospherejs.com/dferber/prerender][dferber:prerender]]                     |                              |
+|                | [[http://atmospherejs.com/kadira/dochead][kadira:dochead]]                        |                              |
+|                | [[http://atmospherejs.com/mdg/seo][mdg:seo]]                               |                              |
+|                | [[http://atmospherejs.com/okgrow/analytics][okgrow:analytics]]                      |                              |
+|----------------+---------------------------------------+------------------------------|

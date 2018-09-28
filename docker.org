@@ -18,7 +18,7 @@ Use ~docker help~, ~man dockerfile~ of ~man docker-<command>~ (e.g. ~man docker-
   - A *registry* (e.g. Docker Hub) that stores images
 - App hierarchy:
   - *Stack*
-  - *Service*: a container from a ~docker-compse~ file
+  - *Service*: a container from a ~docker-compose~ file
   - *Container*:
     - When stopped: a runnable instance of an image
     - When started: a running image (i.e. image + state)
@@ -32,7 +32,8 @@ Use ~docker help~, ~man dockerfile~ of ~man docker-<command>~ (e.g. ~man docker-
   - A *Dockerfile* defines an image
   - A *docker-compose.yml* defines one or more containers (a.k.a. /services/) that work together
 - Tips:
-  - You ~start~ a container (after it has been stopped) and ~run~ an image (which creates and starts a container)
+  - You ~start~ a container (after it has been stopped) and ~run~ an image (which creates and starts a container).
+  - ​Docker services can address each other through their container names as host name.
 
 * Basic docker commands
 
@@ -59,14 +60,16 @@ Use ~docker help~, ~man dockerfile~ of ~man docker-<command>~ (e.g. ~man docker-
 
 * More advanced docker commands
 
-  | command (docker ...)                  | effect                   |
-  |---------------------------------------+--------------------------|
-  | ~volume rm $(docker volume ls)~       | Remove all named volumes |
-  | ~exec -i -t container_name /bin/bash~ | Open a terminal          |
+  | command (docker ...)                  | effect                    |
+  |---------------------------------------+---------------------------|
+  | ~volume rm $(docker volume ls)~       | Remove all named volumes  |
+  | ~exec -i -t container_name /bin/bash~ | Open a terminal           |
+  | ~system prune~                        | WARNING: use with caution |
 
 ** docker-compose
 
-   | command (~docker-compose ...~) | effect                   |
-   |--------------------------------+--------------------------|
-   | ~exec container_name sh~       | run a command            |
-   | ~-f <file> up~                 | start from a custom file |
+   | command (~docker-compose ...~) | effect                                        |
+   |--------------------------------+-----------------------------------------------|
+   | ~exec <container_name> bash~   | run command ~bash~                            |
+   | ~-f <file> up~                 | start from a custom file                      |
+   | ~down --volumes~               | also remove volumes attached to the container |

@@ -1,0 +1,103 @@
+#+TITLE: Data Science with Pandas
+#+AUTHOR: René Steetskamp
+#+EMAIL: steets@otech.nl
+#+STARTUP: showall indent hidestars
+
+[[https://pandas.pydata.org/][Home]] | [[http://ehneilsen.net/notebook/pandasExamples/pandas_examples.html][Cookbook]] | [[https://jakevdp.github.io/PythonDataScienceHandbook][Handbook]]
+
+Data science is learning from data in order to gain useful predictions and insights and consists of the steps below[fn::https://cs109.github.io]:
+
+
+1. _Ask_ an interesting question:
+    1. What is the scientific *goal*?
+    2. What would you do if you had all the *data*?
+    3. What do you want to *predict* or *estimate*?
+2. _GET_ the data:
+    1. How were the data *sampled*?
+    2. Which data are *relevant*?
+    3. Are there *privacy* or *copyright* issues?
+3. _EXPLORE_ the data:
+    1. *Plot* the data.
+    2. Are there *anomalies*?
+    3. Are there *patterns*?
+4. _MODEL_ the data:
+    1. *Build* a model.
+    2. *Fit* the model.
+    3. *Validate* the model.
+5. _Communicate_ and *visualize* the results:
+    1. What did we *learn*?
+    2. Do the results make *sense*?
+    3. Can we tell a *story*?
+
+
+Data science can roughly be split into data engineering and data analysis. Data /engineering/ consists of gathering and preparing data for analysis by [[file:web_scraping.org][scraping]] cleaning, correcting, integrating, re-ordering, scaling, converting, etc. In other words, data engineers transform data into formats that data scientists can analyze. For a good introduction to data /analysis/, sign up for the free [[https://eu.udacity.com/course/intro-to-data-analysis--ud170][Udacity course]].
+
+* Python packages
+
+The [[https://pydata.org/downloads.html][PyData]] Python Open Data Science Stack:
+
+- [[http://www.numpy.org/][numpy]] as ~np~
+  - ~axis=0~ means /columns/ and ~axis=1~ means /rows/
+- [[http://www.scipy.org/][scipy]]
+- [[http://scikit-learn.org/stable/documentation.html][sklearn]]
+  - ~preprocessing~
+  - ~linear_model~
+  - ~cross_validation~
+  - ~confusion_matrix~
+  - ~svm~
+  - ~multiclass~
+- [[https://pandas.pydata.org][pandas]] as ~pd~ \\
+  (/The/ framework for data engineering, although others exist, like [[http://bubbles.databrewery.org/][Bubbles]].)
+- [[https://www.bonobo-project.org/][bobobo]] for ETL
+
+* Preprocessing
+
+- binarization
+- mean removal
+- scaling
+- normalization
+- label encoding
+
+* Machine learning
+
+[[https://en.wikipedia.org/wiki/Portal:Machine_learning][Wikipedia Portal]]
+
+** Applications of AI
+- Computer Vision (CV)
+- Natural Language Processing (NLP)
+- Speech Recognition
+- Expert Systems (rule based)
+- Games
+- Robotics (/all of the above/)
+** Branches of AI
+- Machine learning and pattern recognition
+- Logic-based AI
+- Seach
+- Knowledge reresentation
+- Planning
+- Heuristics
+- Genetic Programming
+** Types of models
+- analytical
+- learned
+  - supervised: uses labeled training data
+  - unsupervised: without labeled training data
+** Techniques
+- classification: arrange data into a a fixed numer of distinct categories
+  - if the number of samples if insufficient, the algorithm will *overfit*  the training data
+  Classifiers:
+  - logistic regression: not actually a classifier, but often used as such
+  - Bayes theorem: describes the probability of an event occurring based on different conditions related to this event (/naïve Bayes/  assumes these conditions are independent of each other)
+  - Support Vector Machine (SVM): defines a separating hyperplane between classes (the best hyperplane maximizes the distance to each point)
+- regression: explain the relationship between independent / input / predictor variables and dependent / output variables
+** Metrics
+- Confusion matrix: shows the performance of a classifier in terms of true/false positives/negatives
+- [[https://en.wikipedia.org/wiki/F1_score][F1 score]]: harmonic average of...
+  - precision: #true positives / #total positives
+  - recall: #true positives / #total truths
+** Concepts
+- Cognitive modeling: simulating the human thinking process
+- Deep learning: feature extraction and transformation using using a cascade of multiple layers (hence /deep/) of nonlinear processing units (e.g. neural nets, belief networks), each using the output from the previous layer as input.
+- Rational agent: does the 'right' thing in a given context, using sensors, actuators and an inference engine
+- General Problem Solver (GPS)
+- Cross validation: divide your data set into /training/ and /test/ subsets

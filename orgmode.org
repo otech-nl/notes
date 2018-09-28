@@ -2,7 +2,7 @@
 #+AUTHOR: René Steetskamp
 #+EMAIL: steets@otech.nl
 #+TODO: TODO IN-PROGRESS WAITING DONE
-#+STARTUP: showall inlineimages
+#+STARTUP: showall inlineimages indent hidestars
 
 [[https://orgmode.org/manual/][Manual]] | [[https://orgmode.org/orgcard.pdf][RefCard]] | [[https://orgmode.org/worg/org-tutorials/org4beginners.html][Org4Beginners]] | [[https://orgmode.org/worg/org-glossary.html][Glossary]] | [[http://ehneilsen.net/notebook/orgExamples/org-examples.html][Cookbook]] | [[http://thagomizer.com/blog/2017/03/16/five-useful-org-mode-features.html][5 useful features]]
 

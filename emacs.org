@@ -1,7 +1,7 @@
 #+TITLE: Emacs
 #+AUTHOR: René Steetskamp
 #+EMAIL: steets@otech.nl
-#+STARTUP: showall
+#+STARTUP: showall hidestars
 
 [[https://www.gnu.org/software/emacs/][Home]] | [[http://ergoemacs.org/][ErgoEmacs]]
 
@@ -11,28 +11,37 @@ I use [[https://github.com/bbatsov/prelude][Prelude Emacs]] with minimal [[https
 
 ** Emacs standard
 
-  | key       | effect                       |
-  |-----------+------------------------------|
-  | C-_       | Undo                         |
-  | C-c d     | Duplicate line               |
-  | C-g       | Abort operation              |
-  | C-x 1     | Focus window                 |
-  | C-x 2     | Split window horizontally    |
-  | C-x 3     | Split window vertically      |
-  | C-x C-f   | Find file (open into buffer) |
-  | C-x C-s   | Save buffer to file          |
-  | C-x C-w   | Save buffer to file as ...   |
-  | C-x b     | Go to other buffer           |
-  | C-x d     | Edit directory               |
-  | C-x e     | Execute elisp under cursor   |
-  | C-x o     | Go to other window           |
-  | M-f / M-b | Move word forward / backward |
+   | key       | effect                       |
+   |-----------+------------------------------|
+   | C-^       | Join with next line          |
+   | C-_       | Undo                         |
+   | C-c d     | Duplicate line               |
+   | C-g       | Abort operation              |
+   | C-x 1     | Focus window                 |
+   | C-x 2     | Split window horizontally    |
+   | C-x 3     | Split window vertically      |
+   | C-x C-f   | Find file (open into buffer) |
+   | C-x C-s   | Save buffer to file          |
+   | C-x C-w   | Save buffer to file as ...   |
+   | C-x b     | Go to other buffer           |
+   | C-x d     | Edit directory               |
+   | C-x e     | Execute elisp under cursor   |
+   | C-x o     | Go to other window           |
+   | M-f / M-b | Move word forward / backward |
+
+** Prelude
+
+   | key   | effect         |
+   |-------+----------------|
+   | C-c c | Clean buffer   |
+   | C-c d | Duplicate line |
+   | C-c s | Swap windows   |
 
 ** Custom
 
-  | key   | effect                                      |
-  |-------+---------------------------------------------|
-  | C-c / | Toggle region comment                       |
-  | C-c j | Join lines                                  |
-  | C-c l | List packages                               |
-  | C-x k | Kill buffer /immediately/ (no confirmation) |
+   | key   | effect                                      |
+   |-------+---------------------------------------------|
+   | C-c / | Toggle region comment                       |
+   | C-c j | Join lines                                  |
+   | C-c l | List packages                               |
+   | C-x k | Kill buffer /immediately/ (no confirmation) |

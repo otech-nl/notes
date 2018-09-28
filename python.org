@@ -1,7 +1,7 @@
 #+TITLE: Python
 #+AUTHOR: René Steetskamp
 #+EMAIL: steets@otech.nl
-#+STARTUP: showall
+#+STARTUP: showall hidestars
 
 I use Python for work and play. I make money with Python, and I have fun with it.
 
@@ -24,6 +24,11 @@ There's excellent documentation for [[https://docs.python.org/3/][Python itself]
   Version 2.7 of Python has long been my default, but a couple of years ago I switched to version 3, which rectified some of the [[https://www.scrum.org/resources/blog/product-backlog-and-technical-debt][technical debt]] that had built up in version 2, at the cost of loosing backwards compatibility.
 
 * Pythonic
+
+  #+BEGIN_QUOTE
+  To describe something as clever is not considered a compliment in the Python culture.
+  Alex Martelli - Python Cookbook (O’Reilly)
+  #+END_QUOTE
 
   When working with Python, you will often encounter the phrase /pythonic/, indicating if something is 'proper python' or not. But what does this mean?
 
@@ -105,6 +110,6 @@ There's excellent documentation for [[https://docs.python.org/3/][Python itself]
 
    For functional (or behaviorial) testing I prefer [[https://behave.readthedocs.io/][Behave]] that uses [[https://docs.cucumber.io/gherkin/][Gherkin]] to describe behavior in (near) natural language.
 
-** Faking data
-
+** Utilities
+   [[https://github.com/chase-seibert/python-mocking][Mock Cookbook]]
    [[https://faker.readthedocs.io/][Faker]]
