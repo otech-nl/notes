@@ -1,0 +1,62 @@
+#+TITLE: IT wisdom
+#+AUTHOR: René Steetskamp
+#+EMAIL: steets@otech.nl
+#+STARTUP: showall
+
+* Code / design
+
+  _Good software_ [[[https://martinfowler.com/bliki/BeckDesignRules.html][Beck]]]:
+  1. *Passes the tests*
+  2. *Reveals intention*
+     - I will contend that /Conceptual Integrity/ is the most important consideration in system design. It is better to have a system omit certain anomalous features and improvements, but to reflect one set of design ideas, than to have one that contains many good but independent and uncoordinated ideas. [[[https://en.wikipedia.org/wiki/The_Mythical_Man-Month][Brooks]]]
+     - Simplicity and clarity —in short: what mathematicians call "/elegance/"— are not a dispensable luxury, but a crucial matter that decides between success and failure [[[http://www.cs.utexas.edu/users/EWD/][Dijkstra]]]
+     - /Convention/ over configuration
+     - Separation of Concerns
+     - Maximum coherence, minimum dependency
+  3. *No duplication*
+     - Don’t Repeat Yourself (DRY)
+     - Single Point of Truth (SPOT)
+  4. *Fewest elements*
+     - A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away. [[[https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%25C3%25A9ry][Antoine de Saint-Exupéry]]]
+     - Less is More
+     - Occam's razor: the simplest option is usually correct
+     - Keep It Small and Simple (KISS) until proven complex
+     - Make everything as simple as possible, but not simpler [Einstein]
+     - Measuring programming progress by lines of code is like measuring aircraft building progress by weight. [Gates]
+
+  Snippets:
+  - From the [[https://en.wikipedia.org/wiki/Design_Patterns][Gang of Four]]:
+    - Program to an /interface/, not an implementation
+    - Favor object /composition/ over class inheritance
+  - Algemene namen:
+    - Foo, bar
+    - Alice, Bob, Carol & Dave
+  - Make the change easy. Then make the easy change.
+
+* Projects / management
+
+  About IT:
+  - IT connects people and systems
+  - IT is a craft
+  - IT is human labour
+
+  Snippets:
+  - Deploy Early and Often (DEO) / Release Early, Release Often (RERO)
+  - Problem vs Work
+  - Realistische ambitie
+  - _Pareto principle_: 20/80% rule
+  - Lacking quality, rules abound.
+
+* Aphorisms
+
+  - _Brooks's Law_: Adding manpower to a late software project makes it later
+  - _Clarke's third law_: Any sufficiently advanced technology is indistinguishable from magic.
+    - _Reverse_: any technology that is not like magic, is insufficiently advanced
+  - _Conway's Law_: organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations
+  - _Finagle's corollary_: — at the worst possible moment.
+  - _Hanlon's razor_: Never attribute to malice that which is adequately explained by stupidity.
+  - _Hofstadter's Law_: It always takes longer than you expect, even when you take into account Hofstadter's Law.
+  - _Murphy's law_: Anything that can go wrong, will go wrong.
+    - _Muphry’s law_: Any correction will introduce new errors.
+  - _Parkinson's law_: work expands so as to fill the time available for its completion
+  - _Peter principle_: managers rise to the level of their incompetence

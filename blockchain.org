@@ -1,0 +1,10 @@
+#+TITLE: Blockchain
+#+AUTHOR: René Steetskamp
+#+EMAIL: steets@otech.nl
+
+* Key concepts
+
+  - Chain of immutable blocks (though hashes)
+  - Public, distributed replication (through peer to peer - p2p)
+  - Decentralized, trustless consensus (by collective self-interest)
+  - Forks are resolved through scoring (resulting in orphan blocks)

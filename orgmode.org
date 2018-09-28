@@ -14,23 +14,29 @@
 
 * Links[fn:: Show markup by removing the last (hidden) symbol of the link]: [[http://otech.nl]], [[http://otech.nl][OTech]], [[http://otech.nl/img/otech.jpg]]
 
-* TODO Cycle to do items with S-LEFT and S-RIGHT
+* Cycle to do items with S-LEFT and S-RIGHT
 
 * Table and keys
 
-  | key              | effect                               |
-  |------------------+--------------------------------------|
-  | A-RET            | New headline                         |
-  | TAB / S-TAB      | Fold / Unfold                        |
-  | A-RIGHT / A-LEFT | Promote / Demote                     |
-  | S-RIGHT / A-LEFT | Cycle workflow                       |
-  | S-UP / S-DOWN    | Cycle priority                       |
-  | C-c C-e          | Export menu                          |
-  | C-c a            | Agenda                               |
-  | C-c C-c          | (when on heading): edit tags         |
-  |                  | (when on top): refresh local setup   |
-  | C-c '            | (in code block): edit in native mode |
-  | C-c ;            | Toggle COMMENT of subtree            |
+  | key              | context    | effect                    |
+  |------------------+------------+---------------------------|
+  | M-RET            |            | New headline              |
+  | TAB / S-TAB      |            | Fold / Unfold             |
+  | M-RIGHT / M-LEFT |            | Promote / Demote          |
+  |                  | table      | Move column               |
+  | M-UP / M-DOWN    | table      | Move row                  |
+  | M-S-DOWN         | table      | Insert row (?)            |
+  | C-c RET          | table      | Insert horizontal line    |
+  | C-c ^            | table      | Sort lines                |
+  | S-RIGHT / S-LEFT | task       | Cycle workflow            |
+  |                  | list       | Cycle bullet type         |
+  | S-UP / S-DOWN    |            | Cycle priority            |
+  | C-c C-e          |            | Export menu               |
+  | C-c a            |            | Agenda                    |
+  | C-c C-c          | heading    | edit tags                 |
+  |                  | on top     | refresh local setup       |
+  | C-c '            | code block | edit in native mode       |
+  | C-c ;            |            | Toggle COMMENT of subtree |
 
 * Literal examples
 
