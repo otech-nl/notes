@@ -1,0 +1,3 @@
+Index.org is here!
+
+[[file:/emacs.org]]
