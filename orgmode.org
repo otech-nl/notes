@@ -1,12 +1,12 @@
-#+TITLE: Org-mode cheat sheet
-#+AUTHOR: René Steetskamp
-#+EMAIL: steets@otech.nl
-#+TODO: TODO IN-PROGRESS WAITING DONE
+#+title: Org-mode cheat sheet
+#+date: <2018-9-25 19:22>
+#+filetags: technote
 #+STARTUP: showall inlineimages indent hidestars
+#+TODO: TODO IN-PROGRESS WAITING DONE
 
-[[https://orgmode.org/manual/][Manual]] | [[https://orgmode.org/orgcard.pdf][RefCard]] | [[https://orgmode.org/worg/org-tutorials/org4beginners.html][Org4Beginners]] | [[https://orgmode.org/worg/org-glossary.html][Glossary]] | [[http://ehneilsen.net/notebook/orgExamples/org-examples.html][Cookbook]] | [[http://thagomizer.com/blog/2017/03/16/five-useful-org-mode-features.html][5 useful features]]
+[[https://orgmode.org/manual/][Manual]] | [[https://orgmode.org/orgcard.pdf][RefCard]] | [[https://orgmode.org/worg/org-tutorials/org4beginners.html][Org4Beginners]] | [[https://orgmode.org/worg/org-glossary.html][Glossary]] | [[http://ehneilsen.net/notebook/orgExamples/org-examples.html][Cookbook]] | [[http://thagomizer.com/blog/2017/03/16/five-useful-org-mode-features.html][5 useful features]] | [[https://orgmode.org/orgcard.txt][Card]]
 
-* Markup: *bold*, /italic/, _underlined_, +strikethrough+, , =verbatim=, ~code~
+* Markup: *bold*, /italic/, _underlined_, +strikethrough+, =verbatim=, ~code~
 
   - list
     + other list

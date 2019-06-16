@@ -1,7 +1,7 @@
-#+TITLE: IT wisdom
-#+AUTHOR: René Steetskamp
-#+EMAIL: steets@otech.nl
-#+STARTUP: showall hidestars
+#+title: IT wisdom
+#+date: <2017-9-08 21:01>
+#+filetags: technote
+#+STARTUP: showall indent
 
 * Code / design
 
@@ -24,33 +24,42 @@
      - Make everything as simple as possible, but not simpler [Einstein]
      - Measuring programming progress by lines of code is like measuring aircraft building progress by weight. [Gates]
 
-  Snippets:
-  - From the [[https://en.wikipedia.org/wiki/Design_Patterns][Gang of Four]]:
-    - Program to an /interface/, not an implementation
-    - Favor object /composition/ over class inheritance
-  - Algemene namen:
-    - Foo, bar
-    - Alice, Bob, Carol & Dave
-  - Make the change easy. Then make the easy change.
-  - Technology develops from the primitive via the complex to the simple. [[[https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%25C3%25A9ry][Antoine de Saint-Exupéry]]]
-  - Command Query Separation: Functions that change state should not return values and functions that return values should not change state.
-  - [[https://hackernoon.com/object-oriented-tricks-3-death-by-arguments-d070ac86d996][Death by Arguments]]
-  - [[https://www.refactoring.com/catalog/][Refactoring Catalog]]
-  - [[http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod][Principles of OOD]]:
-    - Class design:
-      - SRP (Single Responsibility Principle): A class should have one, and only one, reason to change.
-      - OCP (Open Closed Principle): You should be able to extend a classes behavior, without modifying it.
-      - LSP (Liskov Substitution Principle): Derived classes must be substitutable for their base classes.
-      - ISP (Interface Segregation Principle): Make fine grained interfaces that are client specific.
-      - DIP (Dependency Inversion Principle): Depend on abstractions, not on concretions.
-    - Package[fn::binary deliverable] cohesion (what to put inside packages):
-      - REP (Release Reuse Equivalency Principle): The granule of reuse is the granule of release.
-      - CCP (Common Closure Principle): Classes that change together are packaged together.
-      - CRP (Common Reuse Principle): Classes that are used together are packaged together.
-    - package couplings (metrics that evaluate the package structure of a system):
-      - ADP (Acyclic Dependencies Principle): The dependency graph of packages must have no cycles.
-      - SDP (Stable Dependencies Principle): Depend in the direction of stability.
-      - SAP (Stable Abstractions Principle): Abstractness increases with stability.
+ Snippets:
+   - From the [[https://en.wikipedia.org/wiki/Design_Patterns][Gang of Four]]:
+     - Program to an /interface/, not an implementation
+     - Favor object /composition/ over class inheritance
+   - In general, there are six maxims that every programmer should follow [[[https://github.com/norvig/paip-lisp][PAIP]]]:
+     - Be specific.
+     - Use abstractions.
+     - Be concise.
+     - Use the provided tools.
+     - Don't be obscure.
+     - Be consistent.
+   - General naming:
+     - Foo, bar
+     - Alice, Bob, Carol, Dave & Eve ([[https://en.wikipedia.org/wiki/Alice_and_Bob][cryptographic names]])
+   - ​Unix philosophy
+   - Graceful degradation
+   - Make the change easy. Then make the easy change.
+   - Technology develops from the primitive via the complex to the simple. [[[https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%25C3%25A9ry][Antoine de Saint-Exupéry]]]
+   - Command Query Separation: Functions that change state should not return values and functions that return values should not change state.
+   - [[https://hackernoon.com/object-oriented-tricks-3-death-by-arguments-d070ac86d996][Death by Arguments]]
+   - [[https://www.refactoring.com/catalog/][Refactoring Catalog]]
+   - [[http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod][Principles of OOD]]:
+     - Class design:
+       - SRP (Single Responsibility Principle): A class should have one, and only one, reason to change.
+       - OCP (Open Closed Principle): You should be able to extend a classes behavior, without modifying it.
+       - LSP (Liskov Substitution Principle): Derived classes must be substitutable for their base classes.
+       - ISP (Interface Segregation Principle): Make fine grained interfaces that are client specific.
+       - DIP (Dependency Inversion Principle): Depend on abstractions, not on concretions.
+     - Package[fn::binary deliverable] cohesion (what to put inside packages):
+       - REP (Release Reuse Equivalency Principle): The granule of reuse is the granule of release.
+       - CCP (Common Closure Principle): Classes that change together are packaged together.
+       - CRP (Common Reuse Principle): Classes that are used together are packaged together.
+     - package couplings (metrics that evaluate the package structure of a system):
+       - ADP (Acyclic Dependencies Principle): The dependency graph of packages must have no cycles.
+       - SDP (Stable Dependencies Principle): Depend in the direction of stability.
+       - SAP (Stable Abstractions Principle): Abstractness increases with stability.
 
 
 * Projects / management
@@ -73,9 +82,9 @@
   | _Clarke's third law_  | Any sufficiently advanced technology is indistinguishable from magic.                     |
   | _Reverse_             | any technology that is not like magic, is insufficiently advanced                         |
   | _Conway's Law_        | organizations which design systems are constrained to produce designs                     |
-  |                       | which are copies of the communication structures of these organizations                   |
-  | [[https://javadevguy.wordpress.com/2017/05/14/the-genius-of-the-law-of-demeter/][Law of Demeter]]        | For all classes C, and for all methods M attached to C, all objects to which M sends a    |
-  |                       | message must be M’s argument objects (including the self object)                          |
+  |                     | which are copies of the communication structures of these organizations                   |
+  | [[https://javadevguy.wordpress.com/2017/05/14/the-genius-of-the-law-of-demeter/][Law of Demeter]]      | For all classes C, and for all methods M attached to C, all objects to which M sends a    |
+  |                     | message must be M’s argument objects (including the self object)                          |
   | _Hanlon's razor_      | Never attribute to malice that which is adequately explained by stupidity.                |
   | _Hofstadter's Law_    | It always takes longer than you expect, even when you take into account Hofstadter's Law. |
   | _Murphy's law_        | Anything that can go wrong, will go wrong.                                                |

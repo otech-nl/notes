@@ -1,6 +1,7 @@
-#+TITLE: Documentation
-#+AUTHOR: René Steetskamp
-#+EMAIL: steets@otech.nl
+#+title: Documentation
+#+date: <2017-11-11 19:34>
+#+filetags: technote
+#+STARTUP: showall indent
 
 Clearly, [[http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html][reStructured Text]] (reST) is the most Pythonic documentation format. And [[http://www.sphinx-doc.org/][Sphinx]] is the generator to go with it.
 

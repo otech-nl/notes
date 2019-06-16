@@ -1,7 +1,7 @@
-#+TITLE: Meteor overview and major packages (deprecated)
-#+AUTHOR: René Steetskamp
-#+EMAIL: steets@otech.nl
-#+STARTUP: showall indent hidestars inlineimages
+#+title: Meteor overview and major packages (deprecated)
+#+date: <2017-1-4 16:01>
+#+filetags: technote
+#+STARTUP: showall indent inlineimages
 
 This repository contains a brief overview of [[http://meteor.com][Meteor]] and an list of its major packages. Meteor is an innovative platform for developing web-apps. The following features distinguish Meteor from other web-platforms:
 
@@ -21,7 +21,7 @@ These are impressive Unique Selling Points, but in the end it turned out to be t
 
 The mindmap below shows how I understand Meteor:
 
-[[./img/Meteor.png][Meteor mindmap]]
+[[file:./files/Meteor.png][Meteor mindmap]]
 
 The client handles routing and rendering. Routing is taken care of by Flow router, which uses Blaze as template engine (Angular and React are also supported). Templates are divided in three layers:
 

@@ -1,9 +1,9 @@
-#+TITLE: Data Science with Pandas
-#+AUTHOR: René Steetskamp
-#+EMAIL: steets@otech.nl
-#+STARTUP: showall indent hidestars
+#+title: Data Science with Pandas
+#+date: <2018-3-3 13:25>
+#+filetags: technote
+#+STARTUP: showall indent
 
-[[https://pandas.pydata.org/][Home]] | [[http://ehneilsen.net/notebook/pandasExamples/pandas_examples.html][Cookbook]] | [[https://jakevdp.github.io/PythonDataScienceHandbook][Handbook]]
+[[https://pandas.pydata.org/][Home]] | [[http://ehneilsen.net/notebook/pandasExamples/pandas_examples.html][Cookbook]] | [[https://jakevdp.github.io/PythonDataScienceHandbook][Handbook]] | [[https://github.com/norvig/paip-lisp][PAIP]]
 
 Data science is learning from data in order to gain useful predictions and insights and consists of the steps below[fn::https://cs109.github.io]:
 
@@ -28,7 +28,6 @@ Data science is learning from data in order to gain useful predictions and insig
     1. What did we *learn*?
     2. Do the results make *sense*?
     3. Can we tell a *story*?
-
 
 Data science can roughly be split into data engineering and data analysis. Data /engineering/ consists of gathering and preparing data for analysis by [[file:web_scraping.org][scraping]] cleaning, correcting, integrating, re-ordering, scaling, converting, etc. In other words, data engineers transform data into formats that data scientists can analyze. For a good introduction to data /analysis/, sign up for the free [[https://eu.udacity.com/course/intro-to-data-analysis--ud170][Udacity course]].
 

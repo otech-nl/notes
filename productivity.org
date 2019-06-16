@@ -1,6 +1,7 @@
-#+TITLE: Productivity
-#+AUTHOR: René Steetskamp
-#+STARTUP: showall inlineimages
+#+title: Productivity
+#+date: <2018-1-5 14:43>
+#+filetags: technote
+#+STARTUP: showall indent
 
 
   [[./img/GTD-workflow.png]]

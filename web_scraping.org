@@ -1,7 +1,7 @@
-#+TITLE: Web scraping with Scrapy
-#+AUTHOR: René Steetskamp
-#+EMAIL: steets@otech.nl
-#+STARTUP: inlineimages
+#+title: Web scraping with Scrapy
+#+date: <2018-5-28 20:03>
+#+filetags: technote
+#+STARTUP: showall indent inlineimages
 
 You will need three components for web scraping:
 
@@ -14,15 +14,15 @@ The one in the middle is where we, the humans, come in. The Chrome developer too
 
 [[./img/chrome_developer_tools.png][Chrome Developer Tools]]
 
-You can use [[https://www.crummy.com/software/BeautifulSoup/bs4/doc/][Beautiful Soup]] to automate the processing, combined with [[http://docs.python-requests.org/][requests]] or the default [[https://docs.python.org/3/library/urllib.html][urllib]] to do the file transfers. But [[https://scrapy.org][Scrapy]] provides an all-in-one package.
+You can use [[https://www.crummy.com/software/BeautifulSoup/bs4/doc/][Beautiful Soup]] to automate the processing, combined with [[http://docs.python-requests.org/][requests]] or the default [[https://docs.python.org/3/library/urllib.html][urllib]] to do the file transfers. But [[https://scrapy.org][Scrapy]] provides an all-in-one package. (A new kid on the block is [[https://html.python-requests.org/][Requests HTML]].)
 
 * Scrapy
 
 There are two ways to use Scrapy, the hard way and the /quick-'n-dirty/ way:
 
-- For the _hard way_ you let Scrapy generate a project for you with the ~[[https://doc.scrapy.org/en/latest/topics/commands.html#creating-projects][startproject]]~ command. This will give you all the bells and whistles you need for extensive web-scraping, including items, middleware and pipelines. This will allow you to write a whole nest of related (or unrelated) spiders and deploy them to the cloud. But for most use cases this is far more than is needed, and the easy way is sufficient.
+- For the _hard way_ you let Scrapy generate a project for you with the [[https://doc.scrapy.org/en/latest/topics/commands.html#creating-projects][startproject]] command. This will give you all the bells and whistles you need for extensive web-scraping, including items, middleware and pipelines. This will allow you to write a whole nest of related (or unrelated) spiders and deploy them to the cloud. But for most use cases this is far more than is needed, and the easy way is sufficient.
 
-- The _easy way_ is to simply write a spider and run it with the ~[[https://doc.scrapy.org/en/latest/topics/commands.html#runspider][runspider]]~ command. This will give you just one, simple spider, but I find that in most cases this is sufficient.
+- The _easy way_ is to simply write a spider and run it with the [[https://doc.scrapy.org/en/latest/topics/commands.html#runspider][runspider]] command. This will give you just one, simple spider, but I find that in most cases this is sufficient.
 
 The ~scrapy shell~ command allows you the research the page and experiment with selectors.
 

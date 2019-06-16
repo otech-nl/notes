@@ -1,7 +1,7 @@
-#+TITLE: Docker
-#+AUTHOR: René Steetskamp
-#+EMAIL: steets@otech.nl
-#+STARTUP: showall
+#+title: Docker
+#+date: <2018-9-29 9:25>
+#+filetags: technote
+#+STARTUP: showall indent
 
 [[https://docs.docker.com/][Docs]] | [[https://github.com/dimonomid/docker-quick-ref/releases/download/latest/docker-quick-ref.pdf][QuickRef]] | [[https://dockerlux.github.io/pdf/cheat-sheet-v2.pdf][Cheatsheet]]
 
@@ -35,10 +35,20 @@ Use ~docker help~, ~man dockerfile~ of ~man docker-<command>~ (e.g. ~man docker-
   - You ~start~ a container (after it has been stopped) and ~run~ an image (which creates and starts a container).
   - ​Docker services can address each other through their container names as host name.
 
+* Docker way [[[https://djangostars.com/blog/what-is-docker-and-how-to-use-it-with-python/][src]]]
+
+Docker has some restrictions and requirements, depending on the architecture of your system (applications that you pack into containers). You can ignore these requirements or find some workarounds, but in this case, you won't get all the benefits of using Docker. My strong advice is to follow these recommendations:
+
+- 1 application = 1 container.
+- Run the process in the foreground (don't use systemd, upstart or any other similar tools).
+- Keep data out of containers – use volumes.
+- Do not use SSH (if you need to step into container, you can use the docker exec command).
+- Avoid manual configurations (or actions) inside container.
+
 * Basic docker commands
 
-  | command (docker ...)                        | effect                                                |
-  |---------------------------------------------+-------------------------------------------------------|
+  | command (docker ...)                      | effect                                                |
+  |-------------------------------------------+-------------------------------------------------------|
   | ~build -t friendlyhello .~                  | Create image using this directory's Dockerfile        |
   | ~run -p 4000:80 friendlyhello~              | Run "friendlyname" mapping port 4000 to 80            |
   | ~run -d -p 4000:80 friendlyhello~           | Same thing, but in detached mode                      |
@@ -60,16 +70,16 @@ Use ~docker help~, ~man dockerfile~ of ~man docker-<command>~ (e.g. ~man docker-
 
 * More advanced docker commands
 
-  | command (docker ...)                  | effect                    |
-  |---------------------------------------+---------------------------|
+  | command (docker ...)                | effect                    |
+  |-------------------------------------+---------------------------|
   | ~volume rm $(docker volume ls)~       | Remove all named volumes  |
   | ~exec -i -t container_name /bin/bash~ | Open a terminal           |
   | ~system prune~                        | WARNING: use with caution |
 
-** docker-compose
+* docker-compose
 
-   | command (~docker-compose ...~) | effect                                        |
-   |--------------------------------+-----------------------------------------------|
-   | ~exec <container_name> bash~   | run command ~bash~                            |
-   | ~-f <file> up~                 | start from a custom file                      |
-   | ~down --volumes~               | also remove volumes attached to the container |
+  | command (~docker-compose ...~) | effect                                        |
+  |------------------------------+-----------------------------------------------|
+  | ~exec <container_name> bash~   | run command ~bash~                              |
+  | ~-f <file> up~                 | start from a custom file                      |
+  | ~down --volumes~               | also remove volumes attached to the container |

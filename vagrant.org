@@ -1,6 +1,7 @@
-#+TITLE: Virtual development environments with Vagrant
-#+AUTHOR: René Steetskamp
-#+EMAIL: steets@otech.nl
+#+title: Virtual development environments with Vagrant
+#+date: <2017-10-30 20:55>
+#+filetags: technote
+#+STARTUP: showall indent
 
 Python's [[file:python.org][virtual environments]] are a blessing, but as they manage Python dependencies only, they are also limited.
 

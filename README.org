@@ -1,7 +1,6 @@
 #+TITLE: Notes
 #+AUTHOR: René Steetskamp
 #+EMAIL: steets@otech.nl
-#+STARTUP: showall
 
 A collection of notes on several subjects.
 

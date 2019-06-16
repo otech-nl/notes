@@ -1,7 +1,7 @@
-#+TITLE: Python
-#+AUTHOR: René Steetskamp
-#+EMAIL: steets@otech.nl
-#+STARTUP: showall hidestars
+#+title: Python
+#+date: <2018-2-12 12:49>
+#+filetags: technote
+#+STARTUP: showall indent
 
 I use Python for work and play. I make money with Python, and I have fun with it.
 
@@ -74,7 +74,7 @@ There's excellent documentation for [[https://docs.python.org/3/][Python itself]
 
   Here's a list of the packages I use most:
 
-   - Both [[With flask][flask]] and [[With Django][Django]] for web development, on the client combined with [[https://getbootstrap.com/][Bootstrap]], [[https://datatables.net/][Datatables]] and [[https://www.chartjs.org/][Chart.js]].
+   - Both [[With Flask][flask]] and [[With Django][Django]] for web development, on the client combined with [[https://getbootstrap.com/][Bootstrap]], [[https://datatables.net/][Datatables]] and [[https://www.chartjs.org/][Chart.js]].
    - [[file:pandas.org][Pandas]] for data analysis.
    - [[file:web_scraping.org][Scrapy]] for web scraping.
    - [[file:documentation.org][Nikola]] for blogging on [[https://pages.github.com/][Github pages]].
@@ -113,3 +113,13 @@ There's excellent documentation for [[https://docs.python.org/3/][Python itself]
 ** Utilities
    [[https://github.com/chase-seibert/python-mocking][Mock Cookbook]]
    [[https://faker.readthedocs.io/][Faker]]
+
+* Tips
+
+- For REPL there is no standard like [[https://ipython.org/][ipython]], but in some cases I prefer [[https://github.com/jonathanslenders/ptpython][ptpython]].
+- The command ~python -m site~
+
+* Packages to look into
+
+- [[https://www.bonobo-project.org/][bobobo]]
+- [[http://pydoit.org/][Doit]]
