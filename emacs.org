@@ -3,7 +3,7 @@
 #+filetags: technote emacs
 #+STARTUP: showall indent
 
-[[https://www.gnu.org/software/emacs/][Home]]
+[[https://www.gnu.org/software/emacs/][Home]] | [[https:/melpa.org/#/][Melpa]] | [[https://github.com/emacs-tw/awesome-emacs][Awesome]] | [[https://emacs.sexy/][Sexy]]
 
 * Keymaps
 
@@ -51,3 +51,18 @@
    | C-c j | Join lines                                |
    | C-c l | List packages                             |
    | C-x k | Kill buffer /immediately/ (no confirmation) |
+
+* Packages
+
+Managed through [[https://jwiegley.github.io/use-package/][use-package]]:
+
+- [[https://company-mode.github.io/][Company]]
+- [[https://github.com/emacsmirror/draft-mode][draft-mode]]
+- [[https://github.com/magnars/expand-region.el][Expand region]]
+- [[https://magit.vc/][Magit]]
+- [[https://orgmode.org/][Org mode]]
+- [[https://www.projectile.mx/e][Projectile]]
+- [[https://github.com/dbordak/telephone-line][telephone-line]]
+- [[http://web-mode.org/][web-mode]]
+- [[https://github.com/joostkremers/writeroom-mode][writeroom]]
+- Syntax highlighters: [[https://github.com/candera/gherkin-mode/][Gherkin]], [[https://jblevins.org/projects/markdown-mode/][markdown]]

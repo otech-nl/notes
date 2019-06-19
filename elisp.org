@@ -1,0 +1,16 @@
+#+title: Emacs lisp (elisp)
+#+date: <2018-10-14 20:10>
+#+filetags: technote elisp
+#+STARTUP: showall indent
+
+[[http://www.gnu.org/software/emacs/manual/html_node/eintr/index.html][Intro]] | [[https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html][Reference]] | [[http://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Programming.html][Visual tutorial]] | [[https://www.emacswiki.org/emacs/ElispCookbook][Cookbook]] | [[https://github.com/chrisdone/elisp-guide][Guide]] | [[http://ergoemacs.org/emacs/elisp.html][ErgoEmacs]]
+
+* Commands
+
+| command  | effect     |
+| ~M-x ielm~ | elisp REPL |
+|          |            |
+
+* Tips
+
+- Function names ending with "p" are often /predicates/ which test some condition.
