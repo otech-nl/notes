@@ -35,6 +35,7 @@
   | C-c a            |            | Agenda                    |
   | C-c C-c          | heading    | edit tags                 |
   |                  | on top     | refresh local setup       |
+  | C-c C-w          | org        | refile                    |
   | C-c '            | code block | edit in native mode       |
   | C-c ;            |            | Toggle COMMENT of subtree |
 

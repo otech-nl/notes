@@ -1,0 +1,52 @@
+* {
+  font-family: "Ubuntu", "Open Sans", "Sans";
+  line-height: 3.6vh;
+}
+
+@media all and (max-width: 600px)
+{
+  font-size: 1.0vw;
+}
+
+a {
+  color: #01008a;
+  text-decoration: none;
+}
+
+body {
+  margin: auto;
+  max-width: 600pt;
+  padding: 10pt;
+}
+
+footer * {
+  font-size: 90%;
+  text-align: center;
+}
+
+img#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  width: 150pt;
+}
+
+.menu {
+    width: 100%;
+}
+
+.post-date, .taglist {
+  font-size: 90%;
+  text-align: right;
+}
+
+pre, code, tt {
+  font-family: "Courier";
+  background: #eee;
+  padding: 1pt;
+}
+
+td, th {
+  vertical-align: top;
+  padding: 5pt;
+}

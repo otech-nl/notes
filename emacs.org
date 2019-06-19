@@ -1,0 +1,70 @@
+#+title: Emacs
+#+date: <2017-10-21 17:27>
+#+filetags: technote emacs
+#+STARTUP: showall indent
+
+[[https://www.gnu.org/software/emacs/][Home]] | [[https:/melpa.org/#/][Melpa]] | [[https://github.com/emacs-tw/awesome-emacs][Awesome]] | [[https://emacs.sexy/][Sexy]]
+
+* Keymaps
+
+** Emacs standard
+
+   | key             | effect                         |
+   |-----------------+--------------------------------|
+   | C-^             | Join with next line            |
+   | C-_             | Undo                           |
+   | C-g             | Abort operation                |
+   | C-h             | HELP! (and learn)              |
+   | C-S-<BS>        | Kill whole line                |
+   | C-t/M-t/C-x C-t | Transpose char/word/line       |
+   | C-x 1           | HELP! (and learn)              |
+   | C-x 2           | Split window horizontally      |
+   | C-x 3           | Split window vertically        |
+   | C-x C-f         | Find file (open into buffer)   |
+   | C-x C-s         | Save buffer to file            |
+   | C-x C-w         | Save buffer to file as ...     |
+   | C-x C-x         | Exchange point and mark        |
+   | C-x b           | Go to other buffer             |
+   | C-x d           | Edit directory                 |
+   | C-x e           | Execute elisp under cursor     |
+   | C-x o           | Go to other window             |
+   | M-/             | Complete                       |
+   | M-:             | Eval                           |
+   | M-%             | Go to other window             |
+   | M-. (M-,)       | Go to definition (return)      |
+   | M-f / M-b       | Move word forward / backward   |
+   | M-g g           | Jump to line                   |
+   | M-u/M-l/M-c     | Uppercase/lowercase/capitalize |
+
+** Prelude
+
+   | key   | effect         |
+   |-------+----------------|
+   | C-c c | Clean buffer   |
+   | C-c d | Duplicate line |
+   | C-c s | Swap windows   |
+
+** Custom
+
+   | key   | effect                                    |
+   |-------+-------------------------------------------|
+   | C-c / | Toggle region comment                     |
+   | C-c d | Duplicate line                            |
+   | C-c j | Join lines                                |
+   | C-c l | List packages                             |
+   | C-x k | Kill buffer /immediately/ (no confirmation) |
+
+* Packages
+
+Managed through [[https://jwiegley.github.io/use-package/][use-package]]:
+
+- [[https://company-mode.github.io/][Company]]
+- [[https://github.com/emacsmirror/draft-mode][draft-mode]]
+- [[https://github.com/magnars/expand-region.el][Expand region]]
+- [[https://magit.vc/][Magit]]
+- [[https://orgmode.org/][Org mode]]
+- [[https://www.projectile.mx/e][Projectile]]
+- [[https://github.com/dbordak/telephone-line][telephone-line]]
+- [[http://web-mode.org/][web-mode]]
+- [[https://github.com/joostkremers/writeroom-mode][writeroom]]
+- Syntax highlighters: [[https://github.com/candera/gherkin-mode/][Gherkin]], [[https://jblevins.org/projects/markdown-mode/][markdown]]
