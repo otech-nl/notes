@@ -1,52 +1,42 @@
 * {
-  font-family: "Ubuntu", "Open Sans", "Sans";
-  line-height: 3.6vh;
+    font-family: "Ubuntu", "Open Sans", "Sans";
+    line-height: 3.6vh;
 }
 
 @media all and (max-width: 600px)
 {
-  font-size: 1.0vw;
-}
-
-a {
-  color: #01008a;
-  text-decoration: none;
+    font-size: 1.0vw;
 }
 
 body {
-  margin: auto;
-  max-width: 600pt;
-  padding: 10pt;
+    margin: auto;
+    max-width: 600pt;
+    padding: 10pt;
+    padding-top: 3em;
 }
 
-footer * {
-  font-size: 90%;
-  text-align: center;
+#preamble h1 {
+    font-size: 30pt;
+    color: darkred;
 }
 
-img#logo {
-  display: block;
-  margin-left: auto;
-  margin-right: 0;
-  width: 150pt;
-}
-
-.menu {
-    width: 100%;
-}
-
-.post-date, .taglist {
-  font-size: 90%;
-  text-align: right;
+#postamble {
+    text-align: right;
+    border-top: 1px solid black;
 }
 
 pre, code, tt {
-  font-family: "Courier";
-  background: #eee;
-  padding: 1pt;
+    font-family: "Courier";
+    background: #eee;
+    padding: 1pt;
 }
 
 td, th {
-  vertical-align: top;
-  padding: 5pt;
+    vertical-align: top;
+    padding: 5pt;
+}
+
+a {
+    color: #01008a;
+    text-decoration: none;
 }
