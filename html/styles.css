@@ -12,7 +12,7 @@ body {
     margin: auto;
     max-width: 600pt;
     padding: 10pt;
-    padding-top: 3em;
+    /* padding-top: 3em; */
 }
 
 #preamble h1 {

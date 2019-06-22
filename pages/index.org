@@ -1,0 +1,4 @@
+#+TITLE: OTech Blog
+
+- [[file:first.org][First post]]
+- [[file:second.org][Second post]]

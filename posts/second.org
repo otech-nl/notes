@@ -1,0 +1,3 @@
+#+Title: Second post
+#+filetags: post
+This is the second post.
