@@ -15,9 +15,14 @@ body {
     /* padding-top: 3em; */
 }
 
+h1, h2, h3 {
+    font-family: "Times", "Open Serif", "Serif";
+}
+
 #preamble h1 {
-    font-size: 30pt;
+    font-size: 35pt;
     color: darkred;
+    font-weight: bolder;
 }
 
 #postamble {

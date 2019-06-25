@@ -60,13 +60,13 @@ nav .content {
 }
 
 nav > div:active .content {
-    height: 155px;
+    height: 160px;
     z-index: 3;
     -webkit-transition-delay: 0s;
 }
 
 nav .content:hover {
-    height: 155px;
+    height: 160px;
     z-index: 3;
     -webkit-transition-delay: 0s;
 }

@@ -1,1 +1,1 @@
-rsync -aPv --delete html/ vps.otech.nl:~/notes/
+rsync -aPv --delete html/ vps.otech.nl:~/dwim/
